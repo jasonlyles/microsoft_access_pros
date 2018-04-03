@@ -1,0 +1,178 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  color: #B20831;
+}
+
+hr {
+  border-color: #B20831;
+}
+
+.container {
+  width: auto;
+}
+
+.intro {
+  display: table;
+  width: 100%;
+  padding: 160px 0 165px 0;
+  color: #f4f4f4;
+  height: 700px;
+  background: url(../images/microsoft_access_banner.jpg) no-repeat bottom center scroll;
+  background-color: #333333;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
+}
+
+.why {
+  padding-top: 30px;
+}
+
+.content-section {
+  padding: 50px 0 30px 0;
+}
+
+li {
+  margin-left: 10px;
+}
+
+li>span {
+  margin-left: 10px;
+}
+
+li.subbullet {
+  margin-left: 30px;
+}
+
+.sample-pic-restrict-width {
+  max-width: 400px;
+}
+
+.sample-pic-restrict-height {
+  max-height: 350px;
+}
+
+.tech-logo {
+  max-height: 26px;
+}
+
+.client-logo {
+  width: 220px;
+}
+
+#client-carousel {
+  height: 120px;
+}
+
+.navbar {
+  height: 75px;
+  margin-bottom: 0 !important;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  opacity: .8;
+}
+
+.navbar-brand {
+  padding: 5px 20px;
+  height: 80px;
+  margin: 0;
+}
+
+.navbar-brand-logo {
+  height: 70px;
+}
+
+.navbar-toggler {
+  margin-right: 20px;
+}
+
+.navbar-nav {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.navbar-nav>li>a {
+  padding: 26px;
+  margin-left: -10px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+.top-nav-collapse {
+  padding: 0;
+  background-color: #262C28;
+  opacity: 0.95;
+}
+
+.top-nav-collapse a {
+  color: white;
+}
+
+.top-nav-collapse a.dropdown-item {
+  color: black;
+}
+
+.navbar-custom .top-nav-collapse {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar-nav>li>a span {
+  margin: 5px 0 0 0;
+  padding: 0;
+  font-size: 14px;
+  display: block;
+  font-weight: normal;
+  font-family: arial;
+  text-transform: none;
+}
+
+.navbar-nav a:hover, .navbar-nav>.active>a, .navbar-nav>.active>a:hover, .navbar-nav>.active>a:focus {
+  background-image: linear-gradient(to bottom, #74021e, #830323, #920427, #a2062c, #b20831);
+  color: #fff !important;
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height: 60px;
+  padding-top: 20px;
+  background-color: #f4f4f4;
+  a {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  a:hover {
+    color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+@media (min-width: 767px) {
+  a[href^="tel:"] {
+    color: black;
+  }
+}
+
+.light-phone-number {
+  color: white !important;
+}
