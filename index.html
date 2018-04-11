@@ -11,13 +11,13 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/stylesheets/main.css" />
-
+    <link rel="shortcut icon" href="favicon.ico">
     <title>Microsoft Access Database Pros | MS Access Database Design and Development</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-ico"><i class="fas fa-bars"></i></span>
       </button>
       <a class="navbar-brand" href="/"><img src="assets/images/microsoftaccesspros_logo.png" class="navbar-brand-logo img-fluid" /></a>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -91,11 +91,10 @@
         </p>
       </section>
       <hr />
-      <section id="why" class="content-section">
+      <section id="why">
         <h2 class="text-center">Why Microsoft Access Pros?</h2>
-        <br />
-        <div class="row why">
-          <div class="col-md-9">
+        <div class="row why-section">
+          <div id="business-pros" class="col-md-9">
             <h3>We are Business Pros</h3>
             <ul class="list-unstyled">
               <li><i class="fas fa-chevron-right"></i><span> We're reliable. We take your business as seriously as you do. We deliver what we promise.</span></li>
@@ -106,11 +105,11 @@
             <img src="assets/images/handshake.jpg" class="img-fluid" />
           </div>
         </div>
-        <div class="row why">
+        <div class="row why-section">
           <div class="col-md-4">
             <img src="assets/images/uml_diagram.png" class="img-fluid" />
           </div>
-          <div class="col-md-8">
+          <div id="software-pros" class="col-md-8">
             <h3>We are Software Pros</h3>
             <ul class="list-unstyled">
                 <li><i class="fas fa-chevron-right"></i><span> We have 30+ years of experience creating convenient and intuitive user interfaces.</span></li>
@@ -122,8 +121,8 @@
             </ul>
           </div>
         </div>
-        <div class="row why">
-          <div class="col-md-7">
+        <div class="row why-section">
+          <div id="access-pros" class="col-md-7">
             <h3>We are Access Pros</h3>
             <ul class="list-unstyled">
                 <li><i class="fas fa-chevron-right"></i><span> We've developed Microsoft Access database applications for 20+ years. We have the experience and expertise to solve your problems too.</span></li>
@@ -137,11 +136,11 @@
             <img src="assets/images/purchaseorders.jpg" class="img-fluid" />
           </div>
         </div>
-        <div class="row why">
+        <div class="row why-section">
           <div class="col-md-4">
             <img src="assets/images/cost_savings.jpg" class="img-fluid" />
           </div>
-          <div class="col-md-8">
+          <div id="cost-savings" class="col-md-8">
             <h3>Cost Savings</h3>
             <ul class="list-unstyled">
               <li><i class="fas fa-chevron-right"></i><span> Our library of databases provides "cut and paste" solutions for frequently used features, which saves you money and gets you results more quickly.</span></li>
@@ -156,7 +155,7 @@
         <br />
         <div class="row">
           <div class="col-md-12">
-            <img src="assets/images/samples/clientform2.jpg" class="img-fluid float-right sample-pic-restrict-width" />
+            <img src="assets/images/samples/clientform2.png" class="img-fluid float-right" />
             <p>
               We've helped many businesses and non-profits manage their customer and order data, track sales, evaluate business opportunities, and generate the reports they need. We are proficient in both Microsoft Access and Microsoft SQL Server. View <a href="#">sample Microsoft Access applications</a>.
             </p>
@@ -178,7 +177,7 @@
       <hr />
       <section id="access-online-quickbooks-integration" class="content-section">
         <div class="row">
-          <div class="col-md-6">
+          <div id="access-online" class="col-md-6">
             <h2><img src="assets/images/microsoft_dot_net_logo.png" class="img-fluid tech-logo" /> Access on the Web</h2>
             <br />
             <div class="row">
@@ -188,11 +187,11 @@
                 </p>
               </div>
               <div class="col-md-6">
-                <img src="assets/images/samples/royalcanin.jpg" class="img-fluid sample-pic-restrict-height" />
+                <img src="assets/images/samples/royalcanin.png" class="img-fluid" />
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div id="quickbooks-integration" class="col-md-6">
             <h2><img src="assets/images/intuit_quickbooks_logo.png" class="img-fluid tech-logo" /> Quickbooks Integration</h2>
             <br />
             <div class="row">
@@ -202,7 +201,7 @@
                 </p>
               </div>
               <div class="col-md-6">
-                <img src="assets/images/samples/quickbooks-customers.jpg" class="img-fluid sample-pic-restrict-height" />
+                <img src="assets/images/samples/quickbooks-customers.png" class="img-fluid" />
               </div>
             </div>
           </div>
@@ -212,37 +211,62 @@
       <section id="clients" class="content-section">
         <h2 class="text-center">Some of our Satisfied Clients</h2>
         <br />
-        <div id="client-carousel" class="carousel slide" data-ride="carousel">
+        <div class="d-xs-block d-sm-block d-md-none">
+          <a href="http://www.3m.com">3M</a>
+          &middot;
+          <a href="http://www.royalcanin.us/" target="_blank">Royal Canin</a>
+          &middot;
+          <a href="http://www.ask-chemicals.com/" target="_blank">ASK Chemical</a>
+          &middot;
+          <a href="http://www.carlisletire.com/" target="_blank">Carlisle Tire</a>
+          &middot;
+          <a href="http://www.tupperwarebrands.com/" target="_blank">Tupperware</a>
+          &middot;
+          <a href="http://www.missioninnresort.com/" target="_blank">Mission Inn Resort</a>
+          &middot;
+          <a href="http://www.dallashelpdesk.com/" target="_blank">Dallas Help Desk</a>
+          &middot;
+          <a href="http://www.pers-er.com/" target="_blank">PERS</a>
+          &middot;
+          <a href="http://www.jvclegal.org/" target="_blank">JVC Legal</a>
+          &middot;
+          <a href="http://www.silvergateevaluations.com/" target="_blank">Silvergate Evaluations</a>
+          &middot;
+          <a href="http://www.crowncork.com/" target="_blank">Crown Cork</a>
+          &middot;
+          <a href="http://www.pacmillwork.com/cms" target="_blank">Pacific Architectural Millwork</a>
+        </div>
+        <div id="client-carousel" class="carousel slide d-none d-md-block" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row align-items-center text-center">
-                <div class="col-md-2">
-                  <a href="http://www.3m.com" target="_blank">
+                <div class="slide-wrapper col-md-2">
+                  <a href="http://www.3m.com" target="_blank" class="slide-link">
                     <img src="assets/images/clients/3m_logo.png" class="img-fluid client-logo" alt="3M" />
                   </a>
                 </div>
-                <div class="col-md-2">
-                  <a href="http://www.royalcanin.us/" target="_blank">
+                <div class="slide-wrapper col-md-2">
+                  <a href="http://www.royalcanin.us/" target="_blank" class="slide-link">
                     <img src="assets/images/clients/royal_canin_logo.png" class="img-fluid client-logo" alt="Royal Canin" />
                   </a>
                 </div>
-                <div class="col-md-2">
-                  <a href="http://www.ask-chemicals.com/" target="_blank">
+                <div class="slide-wrapper col-md-2">
+                  <a href="http://www.ask-chemicals.com/" target="_blank" class="slide-link">
                     <img src="assets/images/clients/ask_logo.png" class="img-fluid client-logo" alt="ASK Chemical" />
                   </a>
                 </div>
-                <div class="col-md-2">
-                  <a href="http://www.carlisletire.com/" target="_blank">
+                <div class="slide-wrapper col-md-2">
+                  <a href="http://www.carlisletire.com/" target="_blank" class="slide-link">
                     <img src="assets/images/clients/carlisle_logo.png" class="img-fluid client-logo" alt="Carlisle Tire" />
                   </a>
                 </div>
-                <div class="col-md-2">
-                  <a href="http://www.tupperwarebrands.com/" target="_blank">
+                <div class="slide-wrapper col-md-2">
+                  <a href="http://www.tupperwarebrands.com/" target="_blank" class="slide-link">
                     <img src="assets/images/clients/tupperware_logo.png" class="img-fluid client-logo" alt="Tupperware" />
                   </a>
                 </div>
-                <div class="col-md-2">
-                  <a href="http://www.missioninnresort.com/" target="_blank">
+                <div class="slide-wrapper col-md-2">
+                  <a href="http://www.missioninnresort.com/" target="_blank" class="slide-link">
                     <img src="assets/images/clients/mission_inn_resort_logo.png" class="img-fluid client-logo" alt="Mission Inn Resort" />
                   </a>
                 </div>
@@ -250,33 +274,33 @@
             </div>
             <div class="carousel-item">
               <div class="row align-items-center text-center">
-                <div class="col-md-2">
-                  <a href="http://www.silvergateevaluations.com/" target="_blank">
+                <div class="slide-wrapper col-md-2">
+                  <a href="http://www.silvergateevaluations.com/" target="_blank" class="slide-link">
                     <img src="assets/images/clients/silvergate_evaluations_logo.png" class="img-fluid client-logo" alt="Silvergate Evaluations" />
                   </a>
                 </div>
-                <div class="col-md-2">
-                  <a href="http://www.dallashelpdesk.com/" target="_blank">
+                <div class="slide-wrapper col-md-2">
+                  <a href="http://www.dallashelpdesk.com/" target="_blank" class="slide-link">
                     <img src="assets/images/clients/vazata_logo.png" class="img-fluid client-logo" alt="Dallas Help Desk" />
                   </a>
                 </div>
-                <div class="col-md-2">
-                  <a href="http://www.pers-er.com/" target="_blank">
+                <div class="slide-wrapper col-md-2">
+                  <a href="http://www.pers-er.com/" target="_blank" class="slide-link">
                     <img src="assets/images/clients/pers_logo.png" class="img-fluid client-logo" alt="PERS" />
                   </a>
                 </div>
-                <div class="col-md-2">
-                  <a href="http://www.jvclegal.org/" target="_blank">
+                <div class="slide-wrapper col-md-2">
+                  <a href="http://www.jvclegal.org/" target="_blank" class="slide-link">
                     <img src="assets/images/clients/jvc_logo.jpg" class="img-fluid client-logo" alt="JVC" />
                   </a>
                 </div>
-                <div class="col-md-2">
-                  <a href="http://www.crowncork.com/" target="_blank">
+                <div class="slide-wrapper col-md-2">
+                  <a href="http://www.crowncork.com/" target="_blank" class="slide-link">
                     <img src="assets/images/clients/crown_cork_logo.svg" class="img-fluid client-logo" alt="Crown Cork" />
                   </a>
                 </div>
-                <div class="col-md-2">
-                  <a href="http://www.pacmillwork.com/cms" target="_blank">
+                <div class="slide-wrapper col-md-2">
+                  <a href="http://www.pacmillwork.com/cms" target="_blank" class="slide-link">
                     <img src="assets/images/clients/pacific_architectural_millwork_logo.jpg" class="img-fluid client-logo" alt="Pacific Architectural Millwork" />
                   </a>
                 </div>

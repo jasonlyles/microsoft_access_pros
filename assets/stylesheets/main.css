@@ -13,6 +13,11 @@ a {
   color: #B20831;
 }
 
+a:hover {
+  text-decoration: none;
+  color: #660000;
+}
+
 hr {
   border-color: #B20831;
 }
@@ -27,7 +32,7 @@ hr {
   padding: 160px 0 165px 0;
   color: #f4f4f4;
   height: 700px;
-  background: url(../images/microsoft_access_banner.jpg) no-repeat bottom center scroll;
+  background: url(../images/microsoft_access_banner.png) no-repeat bottom center scroll;
   background-color: #333333;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -36,7 +41,12 @@ hr {
   font-family: 'Raleway', sans-serif;
 }
 
-.why {
+#why {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.why-section {
   padding-top: 30px;
 }
 
@@ -56,20 +66,12 @@ li.subbullet {
   margin-left: 30px;
 }
 
-.sample-pic-restrict-width {
-  max-width: 400px;
-}
-
-.sample-pic-restrict-height {
-  max-height: 350px;
-}
-
 .tech-logo {
   max-height: 26px;
 }
 
 .client-logo {
-  width: 220px;
+  max-width: 100%;
 }
 
 #client-carousel {
@@ -79,9 +81,10 @@ li.subbullet {
 .navbar {
   height: 75px;
   margin-bottom: 0 !important;
+  margin-left: -10px;
   padding: 0;
   background-color: rgba(255, 255, 255, 0.4);
-  opacity: .8;
+  opacity: 0.95;
 }
 
 .navbar-brand {
@@ -91,11 +94,25 @@ li.subbullet {
 }
 
 .navbar-brand-logo {
-  height: 70px;
+  height: 65px;
 }
 
 .navbar-toggler {
   margin-right: 20px;
+  margin-left: 30px;
+  border-color: black !important;
+}
+
+.white-navbar-toggler {
+  border-color: white !important;
+}
+
+.navbar-toggler-ico {
+  color: black;
+}
+
+.white-navbar-toggler-ico {
+  color: white;
 }
 
 .navbar-nav {
@@ -103,38 +120,19 @@ li.subbullet {
   padding: 0;
 }
 
-.navbar-nav li {
-  padding-top: 5px;
-  padding-bottom: 5px;
+.navbar-expand-background {
+  background-color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  padding-left: 20px;
 }
 
 .navbar-nav>li>a {
   padding: 26px;
-  margin-left: -10px;
   font-size: 16px;
   font-weight: bold;
   font-family: 'Raleway', sans-serif;
-  -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-  -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-  transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-}
-
-.top-nav-collapse {
-  padding: 0;
-  background-color: #262C28;
-  opacity: 0.95;
-}
-
-.top-nav-collapse a {
-  color: white;
-}
-
-.top-nav-collapse a.dropdown-item {
-  color: black;
-}
-
-.navbar-custom .top-nav-collapse {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .navbar-nav>li>a span {
@@ -147,6 +145,19 @@ li.subbullet {
   text-transform: none;
 }
 
+.top-nav-collapse {
+  padding: 0;
+  background-color: #262C28;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  a {
+    color: white;
+  }
+  a.dropdown-item {
+    opacity: 1;
+    color: black;
+  }
+}
+
 .navbar-nav a:hover, .navbar-nav>.active>a, .navbar-nav>.active>a:hover, .navbar-nav>.active>a:focus {
   background-image: linear-gradient(to bottom, #74021e, #830323, #920427, #a2062c, #b20831);
   color: #fff !important;
@@ -156,8 +167,8 @@ li.subbullet {
   bottom: 0;
   width: 100%;
   text-align: center;
-  height: 60px;
   padding-top: 20px;
+  padding-bottom: 10px;
   background-color: #f4f4f4;
   a {
     color: rgba(0, 0, 0, 0.5);
@@ -173,6 +184,43 @@ li.subbullet {
   }
 }
 
+@media (max-width: 768px) {
+  .intro {
+    background: url(../images/microsoft_access_banner.png) no-repeat bottom left scroll;
+  }
+  #quickbooks-integration {
+    padding-top: 30px;
+  }
+  #software-pros {
+    padding-top: 20px;
+  }
+  #cost-savings {
+    padding-top: 20px;
+  }
+}
+
 .light-phone-number {
   color: white !important;
 }
+
+/*
+Extra Small Devices, Phones
+@media only screen and (min-width : 480px) {
+
+}
+
+Small Devices, Tablets
+@media only screen and (min-width : 768px) {
+
+}
+
+Medium Devices, Desktops
+@media only screen and (min-width : 992px) {
+
+}
+
+Large Devices, Wide Screens
+@media only screen and (min-width : 1200px) {
+
+}
+*/
