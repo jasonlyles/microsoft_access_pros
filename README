@@ -1,0 +1,9 @@
+JavaScript libraries used:
+
+* JQuery v3.3.1
+* Popper v1.12.9 https://popper.js.org/ Used by some Bootstrap functionality, may not actually be used in this project
+* Bootstrap v4.0.0 https://getbootstrap.com/
+* JQuery Easing v1.4.1: http://gsgd.co.uk/sandbox/jquery/easing/ Not currently working the way I want it to to ease transition of navbar, may remove.
+* FontAwesome v5.0.8 https://fontawesome.com/ Used for icons
+* Lightbox2 v2.10.0 http://lokeshdhakar.com/projects/lightbox2/ Used for showing larger versions of images
+* Highlight.js v9.12.0 https://highlightjs.org/ Used for syntax highlighting on access-best-practices.html

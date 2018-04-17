@@ -1,2 +1,6 @@
 Consider using something like this: https://github.com/wilddeer/stickyfill
 for sticking a section header when scrolling down.
+
+* First image in carousel needs a caption on: portfolio-desktop.html
+* Make sure all pages look good on mobile.
+* Add Privacy Policy page

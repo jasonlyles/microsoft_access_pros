@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   $(window).scroll(function() {
-    if ($('.navbar').offset().top > 50) {
+    if ($('.navbar').offset().top > 8) {
       $('.fixed-top').addClass('top-nav-collapse');
       $('.navbar-toggler').addClass('white-navbar-toggler');
       $('.navbar-toggler-ico').addClass('white-navbar-toggler-ico');
