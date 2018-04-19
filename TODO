@@ -3,4 +3,11 @@ for sticking a section header when scrolling down.
 
 * First image in carousel needs a caption on: portfolio-desktop.html
 * Make sure all pages look good on mobile.
-* Add Privacy Policy page
+
+
+* On mobile, the cards with images that I've given fixed heights have way too much whitespace under them in most images
+* See if I can maybe get the code window on the best practices page to
+  be smaller on mobile. Having a hard time with this one. Could either skip, or don't show it on phones.
+* Samples page should probably have 2 columns instead of 3 once we start getting narrower. Can't do this the way I currently have it set up with the card decks, at least without some js.
+* Too much space between main image and content on index page. Seems that way on phone, but not on dev emulator
+* On mobile, images opened in modals don't really get any bigger. In landscape on my phone, they don't fill up the available space.

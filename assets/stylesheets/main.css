@@ -29,17 +29,15 @@ hr {
 }
 
 .intro {
-  display: table;
-  width: 100%;
   padding: 160px 0 165px 0;
   color: #f4f4f4;
   height: 700px;
-  background: url(../images/microsoft_access_banner.png) no-repeat bottom center scroll;
+  background: url(../images/microsoft_access_banner.png) no-repeat top center scroll;
   background-color: #333333;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: 100% cover;
+  -moz-background-size: 100% cover;
+  -o-background-size: 100% cover;
+  background-size: 100% cover;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -177,10 +175,6 @@ li.subbullet {
   padding: 0;
 }
 
-.navbar-expand-background {
-  background-color: white;
-}
-
 .navbar-light .navbar-nav .nav-link {
   padding-left: 20px;
   padding-right: 20px;
@@ -206,11 +200,6 @@ li.subbullet {
 .top-nav-collapse {
   padding: 0;
   background-color: #262C28;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.top-nav-collapse a {
-  color: white !important;
 }
 
 .top-nav-collapse a.dropdown-item {
@@ -248,18 +237,26 @@ li.subbullet {
   }
 }
 
-@media (min-width: 767px) {
+/* tablets and wider */
+
+@media (min-width: 768px) {
   a[href^="tel:"] {
     color: black;
   }
 }
 
-@media (max-width: 768px) {
+/* smaller than tablets */
+
+@media (max-width: 767px) {
   body {
-    padding-bottom: 140px;
+    padding-bottom: 0;
+  }
+  .footer {
+    position: relative;
   }
   .intro {
-    background: url(../images/microsoft_access_banner.png) no-repeat bottom left scroll;
+    height: 500px;
+    background: url(../images/microsoft_access_banner.png) no-repeat top left scroll;
   }
   #quickbooks-integration {
     padding-top: 30px;
@@ -269,6 +266,35 @@ li.subbullet {
   }
   #cost-savings {
     padding-top: 20px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
+
+/* smaller than laptop */
+
+@media (max-width: 991px) {
+  .navbar-collapse ul>li a {
+    font-size: 16px;
+    padding: 15px;
+  }
+  .navbar-expand-background {
+    background-color: white;
+  }
+}
+
+/* laptop and wider */
+
+@media (min-width: 992px) {
+  .top-nav-collapse a {
+    color: white !important;
   }
 }
 
