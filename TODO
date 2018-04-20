@@ -1,17 +1,10 @@
-BEFORE RELEASE:
+ISSUES:
 
 * First image needs a caption on: portfolio-desktop.html
 * See if I can maybe get the code window on the best practices page to
   be smaller on mobile. Having a hard time with this one. Could either skip, or don't show it on phones.
-* On mobile, images opened in modals don't really get any bigger. In landscape on my phone,
-  they don't fill up the available space.
-
-BEFORE HANDING OVER TO BRAD:
-
-* Before I can hand this over to Brad, I need to figure out some way of doing header, nav, footer partials,
-  and generating files using those partials. Part of that would be figuring out which nav item was active.
-  Could maybe just be a simple Ruby script that pulls those files and generates the html files. Would maybe
-  also want to dynamically add references to css and js files.
+* On mobile, images opened in modals don't really get any bigger in landscape.
+  They sometimes get smaller. Is this something I can fix?
 
 MAYBE:
 
