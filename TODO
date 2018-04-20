@@ -1,13 +1,23 @@
-Consider using something like this: https://github.com/wilddeer/stickyfill
-for sticking a section header when scrolling down.
+BEFORE RELEASE:
 
-* First image in carousel needs a caption on: portfolio-desktop.html
+* First image needs a caption on: portfolio-desktop.html
 * Make sure all pages look good on mobile.
-
-
-* On mobile, the cards with images that I've given fixed heights have way too much whitespace under them in most images
 * See if I can maybe get the code window on the best practices page to
   be smaller on mobile. Having a hard time with this one. Could either skip, or don't show it on phones.
-* Samples page should probably have 2 columns instead of 3 once we start getting narrower. Can't do this the way I currently have it set up with the card decks, at least without some js.
-* Too much space between main image and content on index page. Seems that way on phone, but not on dev emulator
-* On mobile, images opened in modals don't really get any bigger. In landscape on my phone, they don't fill up the available space.
+* On mobile, images opened in modals don't really get any bigger. In landscape on my phone,
+  they don't fill up the available space.
+
+BEFORE HANDING OVER TO BRAD:
+
+* Before I can hand this over to Brad, I need to figure out some way of doing header, nav, footer partials,
+  and generating files using those partials. Part of that would be figuring out which nav item was active.
+  Could maybe just be a simple Ruby script that pulls those files and generates the html files. Would maybe
+  also want to dynamically add references to css and js files.
+* Make sure to clean up unused css, get rid of unnecessary things, comment on things that might need explanation.
+
+MAYBE:
+
+* Maybe convert px values (at least for typography) to viewport units (vw, vh) If I try this, it should be
+  in its own branch.
+* Consider using something like this: https://github.com/wilddeer/stickyfill
+  for sticking a section header when scrolling down.
