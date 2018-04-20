@@ -24,9 +24,27 @@ hr {
   border-color: #B20831;
 }
 
+section.content {
+  padding: 50px 0 30px 0;
+}
+
+li {
+  margin-left: 10px;
+}
+
+li>span {
+  margin-left: 10px;
+}
+
+li.subbullet {
+  margin-left: 30px;
+}
+
 .container {
   width: auto;
 }
+
+/* SPECIAL CLASSES AND IDS */
 
 .intro {
   padding: 160px 0 165px 0;
@@ -48,22 +66,6 @@ hr {
 
 .why-section {
   padding-top: 30px;
-}
-
-section.content {
-  padding: 50px 0 30px 0;
-}
-
-li {
-  margin-left: 10px;
-}
-
-li>span {
-  margin-left: 10px;
-}
-
-li.subbullet {
-  margin-left: 30px;
 }
 
 .code-block {
@@ -103,6 +105,25 @@ li.subbullet {
 #client-carousel {
   height: 120px;
 }
+
+.header-ribbon {
+  height: 8px;
+  background-image: linear-gradient(to top, #74021e, #830323, #920427, #a2062c, #b20831);
+}
+
+.float-right-what-we-do {
+  float: right !important;
+}
+
+.light-phone-number {
+  color: white !important;
+}
+
+.about-image {
+  max-height: 200px;
+}
+
+/* NAVBAR STYLES */
 
 .navbar-spacer {
   height: 75px;
@@ -196,14 +217,7 @@ li.subbullet {
   color: #fff !important;
 }
 
-.header-ribbon {
-  height: 8px;
-  background-image: linear-gradient(to top, #74021e, #830323, #920427, #a2062c, #b20831);
-}
-
-.float-right-what-we-do {
-  float: right !important;
-}
+/* FOOTER STYLES */
 
 .footer {
   bottom: 0;
@@ -220,6 +234,8 @@ li.subbullet {
     color: rgba(0, 0, 0, 0.7);
   }
 }
+
+/* MEDIA QUERIES */
 
 /* tablets and wider */
 
@@ -273,6 +289,15 @@ li.subbullet {
   }
 }
 
+/* phone */
+
+@media (max-width: 479px) {
+  .navbar-collapse ul>li a {
+    font-size: 14px !important;
+    padding: 12px !important;
+  }
+}
+
 /* smaller than laptop */
 
 @media (max-width: 991px) {
@@ -297,14 +322,6 @@ li.subbullet {
   .top-nav-collapse a {
     color: white !important;
   }
-}
-
-.light-phone-number {
-  color: white !important;
-}
-
-.about-image {
-  max-height: 200px;
 }
 
 /* large screen and wider */
